@@ -28,4 +28,4 @@
 
 #### Пример игры:
 
-<iframe src="https://asciinema.org/a/qVnMz4dcMH6HtlgKTO4hkoa5y.embed" title="Asciinema Player" allowfullscreen frameborder="0"></iframe>
+https://asciinema.org/a/qVnMz4dcMH6HtlgKTO4hkoa5y

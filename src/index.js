@@ -2,7 +2,7 @@ import readlineSync, { question } from "readline-sync";
 
 const countRound = 3;
 
-const runGame = (gameName) => {
+const runGame = (description, getQuestionAndAnswer) => {
   console.log("Welcome to the Brain Games!");
 
   const name = readlineSync.question("May I have your name?");
@@ -11,7 +11,8 @@ const runGame = (gameName) => {
   console.log(description);
 
   for (let i = 0; i < countRound; i++) {
-    console.log("Question: " + getQuestionAndAnswer);
+    const { questiond, correctAnswer } = getQuestionAndAnswer();
+    console.log("Question: " + questiond);
 
     const userAnswer = readlineSync.question("Your answer: ");
 
@@ -19,12 +20,12 @@ const runGame = (gameName) => {
       console.log("Correct!");
     } else {
       console.log(
-        userAnswer + "is wrong answer ;(. Correct answer was" + correctAnswer
+        userAnswer + " is wrong answer ;(. Correct answer was " + correctAnswer
       );
-      console.log("Let's try again," + name + "!");
+      console.log("Let's try again, " + name + "!");
       return;
     }
-    console.log("Congratulations," + name + "!");
+    console.log("Congratulations, " + name + "!");
   }
 };
 

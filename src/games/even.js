@@ -7,7 +7,7 @@ const description = 'Answer "yes" if the number is even, otherwise answer "no"';
 
 const getQuestionAndAnswer = () => {
   const questiond = getRandomNumber(1, 9);
-  const correctAnswer = isEven(getRandomNumber) ? "yes" : "no";
+  const correctAnswer = isEven(questiond) ? "yes" : "no";
   return { questiond, correctAnswer };
 };
 

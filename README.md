@@ -28,4 +28,4 @@
 
 #### Пример игры:
 
-<script src="https://asciinema.org/a/qVnMz4dcMH6HtlgKTO4hkoa5y.js" id="asciicast-qVnMz4dcMH6HtlgKTO4hkoa5y" async="true"></script>
+<iframe  src="https://asciinema.org/a/qVnMz4dcMH6HtlgKTO4hkoa5y.js" id="asciicast-qVnMz4dcMH6HtlgKTO4hkoa5y" async="true"></iframe>

@@ -11,8 +11,8 @@ const runGame = (description, getQuestionAndAnswer) => {
   console.log(description);
 
   for (let i = 0; i < countRound; i++) {
-    const { questiond, correctAnswer } = getQuestionAndAnswer();
-    console.log("Question: " + questiond);
+    const { question, correctAnswer } = getQuestionAndAnswer();
+    console.log("Question: " + question);
 
     const userAnswer = readlineSync.question("Your answer: ");
 

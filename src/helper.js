@@ -19,6 +19,20 @@ const getLargestGeneralDivisor = (firstNum, secondNum) => {
   return getLargestGeneralDivisor(firstNum, secondNum - firstNum);
 };
 
+const progressLength = 10;
+const getProgression = () => {
+  let progressNumber = getRandomNumber(1, 100);
+  const step = getRandomNumber(1, 10);
+  const progression = [];
+
+  for (let i = 0; i < progressLength; i += 1) {
+    progression.push(progressNumber);
+    progressNumber += step;
+  }
+  return progression;
+};
+
 export { getLargestGeneralDivisor };
 export { getRandomOperationSymbol };
 export { getRandomNumber };
+export { getProgression };

@@ -8,5 +8,17 @@ const getRandomOperationSymbol = (symbols) => {
   return randomSymbol;
 };
 
+//алгоритм Евклида
+const getLargestGeneralDivisor = (firstNum, secondNum) => {
+  if (firstNum === 0 || secondNum === 0) {
+    return firstNum + secondNum;
+  }
+  if (firstNum > secondNum) {
+    return getLargestGeneralDivisor(firstNum - secondNum, secondNum);
+  }
+  return getLargestGeneralDivisor(firstNum, secondNum - firstNum);
+};
+
+export { getLargestGeneralDivisor };
 export { getRandomOperationSymbol };
 export { getRandomNumber };

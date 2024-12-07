@@ -12,6 +12,7 @@
 - Калькулятор
 - НОД
 - Арифметическая прогрессия
+- Простое ли число?
 
 ## Установка:
 
@@ -64,3 +65,15 @@ https://asciinema.org/a/tooyB3Xhz8zC9jobIXZbo2chE
 #### Пример игры:
 
 https://asciinema.org/a/cLnAJYwmDxEmnJXa9B7KudhSl
+
+### Игра: "Простое ли число?"
+
+Суть игры: показываем игроку случайное число. Игрок должен определить простое ли это число.
+
+#### Запуск игры:
+
+`make brain-prime`
+
+#### Пример игры:
+
+https://asciinema.org/a/vDyeCcw1BnydmCXD9V64jKv0c

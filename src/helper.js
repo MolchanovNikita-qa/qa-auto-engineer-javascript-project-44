@@ -22,8 +22,8 @@ const getLargestGeneralDivisor = (firstNum, secondNum) => {
 const progressLength = 10;
 
 const getProgression = (length = 10) => {
-  let progressNumber = getRandomNumber(1, 100);
-  const step = getRandomNumber(1, 10);
+  let progressNumber = getRandomNumber(5, 100);
+  const step = getRandomNumber(5, 10);
   const progression = [];
 
   for (let i = 0; i < progressLength; i += 1) {

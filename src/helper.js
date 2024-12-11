@@ -1,5 +1,4 @@
-const getRandomNumber = (max, min) =>
-  Math.floor(Math.random() * (max - min + 1) + min);
+const getRandomNumber = (max, min) => Math.floor(Math.random() * (max - min + 1) + min);
 
 const getRandomOperationSymbol = (symbols) => {
   const symbolsLength = symbols.length;
@@ -8,7 +7,7 @@ const getRandomOperationSymbol = (symbols) => {
   return randomSymbol;
 };
 
-//алгоритм Евклида
+// алгоритм Евклида
 const getLargestGeneralDivisor = (firstNum, secondNum) => {
   if (firstNum === 0 || secondNum === 0) {
     return firstNum + secondNum;
@@ -19,14 +18,12 @@ const getLargestGeneralDivisor = (firstNum, secondNum) => {
   return getLargestGeneralDivisor(firstNum, secondNum - firstNum);
 };
 
-const progressLength = 10;
-
 const getProgression = (length = 10) => {
   let progressNumber = getRandomNumber(5, 100);
   const step = getRandomNumber(5, 10);
   const progression = [];
 
-  for (let i = 0; i < progressLength; i += 1) {
+  for (let i = 0; i < length; i += 1) {
     progression.push(progressNumber);
     progressNumber += step;
   }

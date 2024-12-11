@@ -1,7 +1,7 @@
-import runGame from "../index.js";
-import { getRandomNumber, getLargestGeneralDivisor } from "../helper.js";
+import runGame from '../index.js';
+import { getRandomNumber, getLargestGeneralDivisor } from '../helper.js';
 
-const description = "Find the greatest common divisor of given numbers";
+const description = 'Find the greatest common divisor of given numbers';
 
 const getQuestionAndAnswer = () => {
   const firstNumber = getRandomNumber(1, 100);
@@ -9,7 +9,7 @@ const getQuestionAndAnswer = () => {
 
   const question = `${firstNumber} ${secondNubmer}`;
   const correctAnswer = String(
-    getLargestGeneralDivisor(firstNumber, secondNubmer)
+    getLargestGeneralDivisor(firstNumber, secondNubmer,)
   );
 
   return { question, correctAnswer };

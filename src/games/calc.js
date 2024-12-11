@@ -1,20 +1,20 @@
-import runGame from "../index.js";
-import { getRandomNumber, getRandomOperationSymbol } from "../helper.js";
+import runGame from '../index.js';
+import { getRandomNumber, getRandomOperationSymbol } from '../helper.js';
 
-const operationSymbols = ["+", "-", "*"];
-const description = "What is the result of the expression?";
+const operationSymbols = ['+', '-', '*'];
+const description = 'What is the result of the expression?';
 
 const calcOperation = (symbol, firstValue, secondValue) => {
   let result = 0;
 
   switch (symbol) {
-    case "+":
+    case '+':
       result = firstValue + secondValue;
       break;
-    case "-":
+    case '-':
       result = firstValue - secondValue;
       break;
-    case "*":
+    case '*':
       result = firstValue * secondValue;
       break;
     default:
@@ -28,9 +28,7 @@ const getQuestionAndAnswer = () => {
   const firstNumber = getRandomNumber(0, 10);
   const secondNubmer = getRandomNumber(0, 10);
   const question = `${firstNumber} ${randomSymbol} ${secondNubmer}`;
-  const correctAnswer = String(
-    calcOperation(randomSymbol, firstNumber, secondNubmer)
-  );
+  const correctAnswer = String(calcOperation(randomSymbol, firstNumber, secondNubmer,));
 
   return { question, correctAnswer };
 };

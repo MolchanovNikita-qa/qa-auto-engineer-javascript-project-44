@@ -1,11 +1,10 @@
-import runGame from "../index.js";
-import { getRandomNumber } from "../helper.js";
+import runGame from '../index.js';
+import { getRandomNumber } from '../helper.js';
 
-const description =
-  'Answer "yes" if given number is prime. Otherwise answer "no"';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 
 const primeNum = (num) => {
-  for (let i = 2; i < num; i++) {
+  for (let i = 2; i < num; i += 1) {
     if (num % i === 0) {
       return false;
     }
@@ -15,7 +14,7 @@ const primeNum = (num) => {
 
 const getQuestionAndAnswer = () => {
   const question = getRandomNumber(2, 100);
-  const correctAnswer = primeNum(question) ? "yes" : "no";
+  const correctAnswer = primeNum(question) ? 'yes' : 'no';
 
   return { question, correctAnswer };
 };

@@ -8,9 +8,7 @@ const getQuestionAndAnswer = () => {
   const secondNubmer = getRandomNumber(1, 100);
 
   const question = `${firstNumber} ${secondNubmer}`;
-  const correctAnswer = String(
-    getLargestGeneralDivisor(firstNumber, secondNubmer,)
-  );
+  const correctAnswer = String(getLargestGeneralDivisor(firstNumber, secondNubmer));
 
   return { question, correctAnswer };
 };

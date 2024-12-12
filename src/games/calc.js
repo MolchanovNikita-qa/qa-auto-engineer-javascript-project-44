@@ -28,7 +28,7 @@ const getQuestionAndAnswer = () => {
   const firstNumber = getRandomNumber(0, 10);
   const secondNubmer = getRandomNumber(0, 10);
   const question = `${firstNumber} ${randomSymbol} ${secondNubmer}`;
-  const correctAnswer = String(calcOperation(randomSymbol, firstNumber, secondNubmer,));
+  const correctAnswer = String(calcOperation(randomSymbol, firstNumber, secondNubmer));
 
   return { question, correctAnswer };
 };
